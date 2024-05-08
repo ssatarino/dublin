@@ -1,0 +1,49 @@
+#Skip {
+    position: absolute;
+    left: -500px;
+}
+
+#Skip:focus {
+    left: 100px;
+}
+
+h1{
+    font-family: 'Courier New', monospace, Arial;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav{
+    display: inline-flexbox;
+    text-align: center;
+    background-color: rgb(182, 202, 180);
+    font-size: 200%;
+    width: 100%;
+}
+
+nav a{ 
+    font-family: "pragmatica",'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 3%;
+    text-decoration: none;
+    color: black;
+}
+
+nav:active{
+    background-color: white;
+    border-radius: 10%;
+}
+
+nav a:hover{
+    background-color: white;
+    border-radius: 20%;
+}
