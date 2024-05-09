@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #Skip {
     position: absolute;
     left: -500px;
@@ -5,6 +9,7 @@
 
 #Skip:focus {
     left: 100px;
+    transition: 1s;
 }
 
 h1{
@@ -47,3 +52,90 @@ nav a:hover{
     background-color: white;
     border-radius: 20%;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+    grid-gap: 5%;
+}
+
+.image-grid img{
+    width: 80%;
+    border: solid orange 3px;
+    border-bottom-right-radius: 45px;
+    border-radius: 10% ;
+    opacity: .8;
+    margin: auto;
+    /* above means 3 pictures that they automatically size fractionally */
+}
+
+.image-grid img:hover {
+    border-color: #ffcc00; /* Change border color on hover */
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 1;
+}
+
+
+.image-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+      		scroll-behavior: auto; /* Disae smooth scrolling */
+    }
+
+    *{
+        	transition: 0s !important; 
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    nav {
+        background: #333;
+        border: solid 6px whitesmoke;
+       }
+        nav a {
+               color: #fff;
+    }
+    body{
+        background-color: #333;
+    }
+    main{
+        color: whitesmoke;
+    }
+    h1{
+        color: whitesmoke;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .image-grid{
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 20px;
+        justify-content: center;
+
+    }
+}
+
+
+ 
