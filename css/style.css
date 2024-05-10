@@ -12,79 +12,124 @@ html{
     transition: 1s;
 }
 
-h1{
-    font-family: 'Courier New', monospace, Arial;
+h1 {
+    font-family: "pragmatica-extended", sans-serif;
+    font-size: 6vw;
+    font-weight: 1000000%;
+    font-style: italic;
     text-transform: uppercase;
-    font-size: 100px;
-    text-align: center;
+    text-align: justify;
+    border: 5px solid #A9BF04;
+    padding: 0.5%;
+}
+
+h2 {
+    font-family: "pragmatica-extended", sans-serif;
+    font-size: 2vw;
+    padding-top: 2%;
+}
+
+article {
+    display: flex;
+    font-family: "pragmatica-condensed", 'Courier New', Courier, monospace;
+    flex-direction: column-reverse;
+    border: solid #BF8360 5px;
+    padding: 2%;
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier Std Medium Oblique", 'Courier New', Courier, monospace;
     border-radius: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: #eeebe122;
+    font-style: italic;
 }
 
 nav{
-    display: inline-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    background-color: rgb(182, 202, 180);
+    background-color: #778C58;
     font-size: 200%;
     width: 100%;
+
 }
 
 nav a{ 
     font-family: "pragmatica",'Times New Roman', Times, serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 2.5vw;
     font-style: italic;
     margin: 3%;
     text-decoration: none;
-    color: black;
+    color: #f5f1e6;
+    padding: 2%;
+    line-height: 0;
 }
-
-nav:active{
-    background-color: white;
-    border-radius: 10%;
-}
+/* need javascript for active state? */
 
 nav a:hover{
-    background-color: white;
-    border-radius: 20%;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: black;
+    background-color: #A9BF04;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-button:hover{
-    background-color: white;
-    color: black;
+    padding: 2%;
 }
 
+.current {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    /* border-bottom: 5px dashed #A9BF04;  */
+    background-color: #f5f1e6;
+    color: #778C58
+
+
+}
+
+.current::before {
+    content: "\1F683";
+}
+
+/* Define a container for your image grid */
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin: 0 auto;
-    grid-gap: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    justify-content: center; /* Horizontally center images within the container */
 }
 
-.image-grid img{
-    width: 80%;
-    border: solid orange 3px;
+/* Style each image within the grid */
+.image-grid img {
+    width: 30%; /* Initially set the width to occupy 30% of the container */
+    max-width: 300px; /* Set a maximum width for the image */
+    border: solid #BF8360 5px;
     border-bottom-right-radius: 45px;
-    border-radius: 10% ;
+    border-radius: 10%;
     opacity: .8;
-    margin: auto;
-    /* above means 3 pictures that they automatically size fractionally */
+    margin: 1%; /* Add some margin around each image */
+    box-sizing: border-box; /* Include border and padding in the width calculation */
 }
 
-.image-grid img:hover {
-    border-color: #ffcc00; /* Change border color on hover */
+/* Media query to adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .image-grid img {
+        width: 45%; /* Adjust the width for smaller screens */
+    }
+}
+
+/* Media query to further adjust image size for even smaller screens */
+@media (max-width: 480px) {
+    .image-grid img {
+        width: 90%; /* Adjust the width further for smaller screens */
+        margin: 2%; /* Increase margin for smaller screens */
+    }
+}
+
+
+.image-grid img:hover, .image-grid img:focus{
+    border-color: #BF2642; /* Change border color on hover */
     transform: scale(1.2); /* Increase size on hover */
     opacity: 1;
 }
