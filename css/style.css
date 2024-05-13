@@ -37,6 +37,7 @@ article {
     padding: 2%;
 }
 
+
 body{
     font-family: "Courier Std Medium Oblique", 'Courier New', Courier, monospace;
     border-radius: 50px;
@@ -46,6 +47,11 @@ body{
     padding-top: 2%;
     background-color: #eeebe122;
     font-style: italic;
+}
+
+p {
+    line-height: 1.5;
+
 }
 
 nav{
@@ -86,7 +92,6 @@ nav a:hover{
     background-color: #f5f1e6;
     color: #778C58
 
-
 }
 
 .current::before {
@@ -107,7 +112,7 @@ nav a:hover{
     border: solid #BF8360 5px;
     border-bottom-right-radius: 45px;
     border-radius: 10%;
-    opacity: .8;
+    opacity: 1;
     margin: 1%; /* Add some margin around each image */
     box-sizing: border-box; /* Include border and padding in the width calculation */
 }
@@ -138,6 +143,32 @@ nav a:hover{
 .image-gallery {
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.header-container {
+    width: 100vw;
+    position: relative;
+    margin-left: auto; /* Automatically adjust left margin to center the container */
+    margin-right: auto; /* Automatically adjust right margin to center the container */
+    padding-left: 0; /* Remove padding on the left */
+    }
+  
+  .header-container img {
+    width: 80%; /* Ensure the image takes up the full width of the container */
+}
+  
+    
+  .special-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 60px;
+    text-align: center;
+  }
+    
 
 footer {
     padding-top: 20px;
