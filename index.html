@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
 </head>
@@ -16,7 +17,7 @@
 <a id = "Skip" href = "#main">Skip to Main Content</a>
 
 <header>
-    <img src="images1/mapp.png" alt="Navigation Map" width = "400">
+    <!-- <img src="images1/mapp.png" alt="Navigation Map" width = "400"> -->
     <h1 class="container">Exploring Ireland: A Study Abroad Journey</h1>
     <nav>
         <a class="current" href="index.html"> About Me</a>
@@ -32,23 +33,24 @@
 
 <main id = "main">
     <!-- <h2>Failte go Baile Atha Cliath!</h2> -->
-    <section id="about">
+    <section class="about">
+        
         <h2>About Me</h2>
-        <img src="images/me.jpg" alt="">
-        <p> &#128640 Welcome to our digital travel log documenting our study abroad adventure in Ireland! Our journey takes us through the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join us as we explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.</p>
+        <a href="camImages/meBlurryAK.JPG" data-lightbox="image-1" data-title="This is a picture of me in Alaska in 2022."> <img class="mePic" tabindex="0" src="camImages/meBlurryAK.JPG" alt="Me in Alaska" alt-data= "Me in Alaska" width = "200"></a>
+
+
+        <p> Hello and welcome to my digitial travel log documenting my study abroad adventure in Ireland. My name is Sophie, and I will be your tour guide.
+            This journey will take you the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join me as I explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.</p>
+           
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="image-grid">
-            <img tabindex="0" src="images1/cliffs_moher.jpeg" alt="Howth Cliffs" width = "200">
-            <img tabindex="0" src="images1/cliffsAgain.jpeg" alt="Different View of the Howth Cliffs" width = "200">
-            <img tabindex="0" src="images1/cliffs_moher.jpeg" alt="Howth Cliffs" width = "200">
-            <img tabindex="0" src="images1/cliffsAgain.jpeg" alt="Different View of the Howth Cliffs" width = "200">
-            <img tabindex="0" src="images1/cliffs_moher.jpeg" alt="Howth Cliffs" width = "200">
-
+        <div class="video-container"> 
+            <video width="640" height="360" controls>
+                <source src="bigVideo/collectionVid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-    </section>
+
 </main>
 <footer>
     <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
@@ -57,6 +59,8 @@
     <p></p>
     <p></p>
 </footer>
+
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
