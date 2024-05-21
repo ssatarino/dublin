@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Cliffs of Moher</title>
 </head>
 <body>
     <a id = "Skip" href = "#main">Skip to Main Content</a>
@@ -17,15 +23,70 @@
         <nav>
             <a href="index.html">About Me</a>
             <a href="dublin.html">Dublin</a>
-            <a href="kilkenny.html">Kilkenny</a>
-            <a href="glendalough.html">Glendalough</a>
-            <a href="galway.html">Galway</a>
-            <a class="current" href="cliffs.html"> Cliffs of Moher</a>
+            <a href="galway.html"> Galway</a>
+            <a href="glendalough.html"> Glendalough</a>
+            <a href="northernIE.html">Northern Ireland</a>
+            <a class="current" href="cliffs.html">Cliffs of Moher</a>
             <a href="blog.html">Blog</a>
             <a href="gallery.html">Gallery</a>
         </nav>
     </header>
+
+    <main id = "main">
+        <div class="header-container cliffsofmoher banner">
+            <!-- <img tabindex="0" src="images1/glenbanner.jpg" alt="Glendalough Picture"> --> 
+            <img class="parallax" src = "images1/glenbanner.jpg" alt="Glendalough Banner"  > 
+            <h2 class="special-heading">Cliffs of Moher</h2>
+        </div> <br>
+    <h2>Background </h2>
+    <p> 
+        The Cliffs of Moher (/ˈmʌhər/; Irish: Aillte an Mhothair) are dramatic sea cliffs located at the southwestern edge of the Burren region in County Clare, Ireland. Spanning approximately 14 kilometers (9 miles), the cliffs rise to 120 meters (390 feet) above the Atlantic Ocean at Hag's Head on their southern end. Eight kilometers (5 miles) to the north, they reach their highest point of 214 meters (702 feet) just north of O'Brien's Tower, a round stone tower built in 1835 by Sir Cornelius O'Brien. From there, the cliffs continue at lower elevations. The nearest villages are Liscannor, 6 kilometers (4 miles) to the south, and Doolin, 7 kilometers (4 miles) to the north.
+        <br> <br>
+        Visitors to the cliffs, and those atop O'Brien's Tower, can enjoy views of the Aran Islands in Galway Bay, the Maumturks and Twelve Pins mountain ranges to the north in County Galway, and Loop Head to the south. The Cliffs of Moher are among Ireland's most popular tourist destinations, attracting around 1.5 million visitors annually.
+        </p> <br> <br>
+        
+        
+    <div id="map" style="height: 400px; width: 100%;"></div>
     
+    <script>
+        // Your Leaflet map initialization code goes here
+        var map = L.map('map').setView([52.9715, -9.4309], 14);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script> <br>
+
+        <h2>My Little Trek</h2>
+        <p>When we arrived to the cliffs, we got brunch at the park cafe. I got the salmon foccaccia, and it was delish. Then I went on a little solo walk up and down the path. This is certainly a must-see, however I will say that the amount of other tourists there hampered the experience a bit. The paths were quite crowded, and I simply enjoy nature more when alone.
+        </p> <br>
+        <h3>'Ze Cliffs</h3>
+
+        <div class="image-gallery">
+            <div class="image-text"> 
+                <img tabindex="0" src="morepics/cliffsView2.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="morepics/cliffsView3.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        </div>
+        <h3>Cows</h3>
+        <div class="image-gallery">
+            <div class="image-text">
+                <img tabindex="0" src="morepics/cliffsCows.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="morepics/cows2.jpeg" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        </div>
+
+        <!-- <div class="video-container"> 
+        <video width="640" height="360" controls>
+            <source src="morepics/Sequence 01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div> -->
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    </footer>   
     
 </body>
 </html>
