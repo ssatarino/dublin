@@ -1,0 +1,47 @@
+.accordian {
+    background-color: #f5f1e6;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordian:hover {
+    background-color: #A9BF04;
+    color: white;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: #f5f1e6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+
+  
+  .accordian:after {
+    content: 'click to read'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    background-color: #A9BF04;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(../camImages/glenView.JPG);
+}
