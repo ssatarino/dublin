@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Glendalough</title>
+</head>
+<body>
+    <a id = "Skip" href = "#main">Skip to Main Content</a>
+
+    <header>
+        <h1>Exploring Ireland: A Study Abroad Journey</h1>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="dublin.html">Dublin</a>
+            <a href="galway.html"> Galway</a>
+            <a href="glendalough.html"> Glendalough</a>
+            <a class="current" href="northernIE.html">Northern Ireland</a>
+            <a href="cliffs.html">Cliffs of Moher</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <div class="header-container northernireland banner">
+            <!-- <img tabindex="0" src="images1/glenbanner.jpg" alt="Glendalough Picture"> --> 
+            <img class="parallax" src = "camImages/giantsbanner3.JPG" alt="Glendalough Banner"  > 
+            <h2 class="special-heading">Northern Ireland</h2>
+        </div> <br>
+        <h2>a little History</h2>
+    <p> 
+        Northern Ireland, part of the United Kingdom located in the north-east of the island of Ireland, is described variously as a country, province, or region. It shares an open border with the Republic of Ireland and had a population of 1,903,175 according to the 2021 census. The Northern Ireland Assembly, established by the Northern Ireland Act 1998, manages devolved policy matters, while other areas are reserved for the UK Government. Under the Belfast Agreement, Northern Ireland collaborates with the Republic of Ireland on various issues, and the Republic has a consultative role on non-devolved matters through the British–Irish Governmental Conference.
+        <br><br>
+        Created in 1921 following the partition of Ireland, Northern Ireland's establishment was marked by violence between Protestant unionists, who wanted to remain in the UK, and Catholic nationalists, who sought a united Ireland. This division led to the Troubles, a thirty-year conflict from the late 1960s involving republican and loyalist paramilitaries and state forces, resulting in over 3,500 deaths. The 1998 Good Friday Agreement was crucial in the peace process, leading to paramilitary disarmament and security normalization, though issues of sectarianism and segregation persist, with occasional violence continuing to disrupt the peace.
+        
+        
+        <br><br>
+    </p> 
+
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    
+    <script>
+        // Your Leaflet map initialization code goes here
+        var map = L.map('map').setView([54.7, -6.49], 8);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script> <br>
+
+        <h2>Belfast to Dunluce to Giant's Causeway</h2>
+        <p> Some friends and I took a bus tour from Dublin to Northern Ireland on one of our free Saturdays. We thought about just taking the train to Belfast and then doing other transportation to the Causeway but decided to actually get a tour because we thought that would be simpler for a day trip. Alas, we woke up at 6am that Saturday to catch our bus outside of Trinity College. </p>
+        
+        <h3>Belfast</h3>
+        <p> The first stop on the tour took us to the city of Belfast. There, we choose to do a black taxi tour, which was included in the bus trip fee (the other option was the Titanic Tour). I was ignorant of the ongoing strife in Belfast before arriving there, and our tour was rather informative on the injustices which have taken place against the Irish nationalists.  </p> <br>
+        <!-- <div class="image-gallery"> -->
+            <div class="image-gallery2">
+                <a href="camImages/nieNavMe.jpeg" data-lightbox="image-1" data-title="Navya and I in the black taxi."> <img tabindex="0" src="camImages/nieNavMe.jpeg" alt="Navya and I in the black taxi." alt-data= "Navya and I in the black taxi." width = "200"></a>
+                <!-- <div class="overlay-text"> HIfjidsofjiaos </div> -->
+                <a href="camImages/mural.jpeg" data-lightbox="image-1" data-title="Irish nationalist murals on an Irish part of town."> <img tabindex="0" src="camImages/mural.jpeg" alt="Irish nationalist murals on an Irish part of town." alt-data= "Irish nationalist murals on an Irish part of town." width = "200"></a>
+            </div>
+        <!-- </div> -->
+        <br> <br>
+        <h3>Dunluce Castle</h3>
+          <p> To the untrained eye (my own), a great deal of the castle ruins in Ireland will look very similar. Dunluce, however, is special in that it is situated on the picturesque northern coast. You get both a castle view and an ocean view in one. </p> <br>
+          <div class="image-gallery2"> 
+            <a href="camImages/dunluce.jpeg" data-lightbox="image-1" data-title="View of Dunluce Castle atop the hill"> <img tabindex="0" src="camImages/dunluce.jpeg" alt="View of Dunluce Castle atop the hill." alt-data= "View of Dunluce Castle atop the hill." width = "200"></a>
+            <a href="camImages/dunluceView.jpeg" data-lightbox="image-1" data-title="View through a window/hole in the castle."> <img tabindex="0" src="camImages/dunluceView.jpeg" alt="View through a window/hole in the castle." alt-data= "View through a window/hole in the castle.." width = "200"></a>
+        </div>
+        <h3>Giant's Causeway</h3>
+        <p> The last stop on our journey was to Giant's Causeway. We took the "long" trail (30+ minutes) to get down to the water and rocks. </p> <br>
+
+        <div class="image-gallery2"> 
+            <a href="morepics/giantsCauseway.JPG" data-lightbox="image-1" data-title="The rocks and water at Giant's Causeway."> <img tabindex="0" src="morepics/giantsCauseway.JPG" alt="The rocks and water at Giant's Causeway." alt-data= "The rocks and water at Giant's Causeway." width = "200"></a>
+            <a href="morepics/giantsView.JPG" data-lightbox="image-1" data-title="View of cliffs at Giant's Causeway from a distance."> <img tabindex="0" src="morepics/giantsView.JPG" alt="View of cliffs at Giant's Causeway from a distance." alt-data= "View of cliffs at Giant's Causeway from a distance." width = "200"></a>
+        </div>
+        <div class="image-gallery-up">
+            <a href="morepics/giantsRocksWater.jpeg" data-lightbox="image-1" data-title="View of the rocks and water close up"> <img tabindex="0" src="morepics/giantsRocksWater.jpeg" alt="View of the rocks and water close up" alt-data= "View of the rocks and water close up" width = "200"></a>
+            <a href="morepics/giantsStasiMe.JPG" data-lightbox="image-1" data-title="Stasi and I sitting on the cliffs and posing!"> <img tabindex="0" src="morepics/giantsStasiMe.JPG" alt="Stasi and I sitting on the cliffs and posing!" alt-data= "Stasi and I sitting on the cliffs and posing!" width = "200"></a>
+            <a href="morepics/giantsFriends.JPG'" data-lightbox="image-1" data-title="Stasi, Sarah, Lauren, and I walking on the causeway."> <img tabindex="0" src="morepics/giantsFriends.JPG" alt="Stasi, Sarah, Lauren, and I walking on the causeway." alt-data= "Stasi, Sarah, Lauren, and I walking on the causeway." width = "200"></a>
+
+        </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
+</body>
+</html>
