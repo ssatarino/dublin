@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Galway</title>
 </head>
 <body>
     <a id = "Skip" href = "#main">Skip to Main Content</a>
@@ -17,15 +23,79 @@
         <nav>
             <a href="index.html">About Me</a>
             <a href="dublin.html">Dublin</a>
-            <a href="kilkenny.html">Kilkenny</a>
-            <a href="glendalough.html">Glendalough</a>
             <a class="current" href="galway.html"> Galway</a>
+            <a ref="glendalough.html"> Glendalough</a>
+            <a href="northernIE.html">Northern Ireland</a>
             <a href="cliffs.html">Cliffs of Moher</a>
             <a href="blog.html">Blog</a>
             <a href="gallery.html">Gallery</a>
         </nav>
     </header>
+
+    <main id = "main">
+        <div class="header-container galway banner">
+            <!-- <img tabindex="0" src="images1/glenbanner.jpg" alt="Glendalough Picture"> --> 
+            <img class="parallax" src = "images1/glenbanner.jpg" alt="Glendalough Banner"  > 
+            <h2 class="special-heading">Galway</h2>
+        </div> <br>
+    <h2>Background </h2>
+    <p> 
+        Galway (Irish: Gaillimh) is a city in County Galway, located on the River Corrib between Lough Corrib and Galway Bay. It is the largest city in the province of Connacht and the fifth most populous city on the island of Ireland, with a 2022 census population of 85,910. Founded near an earlier settlement, Galway developed around a fortification built by the King of Connacht in 1124. It received a municipal charter in 1484, allowing the formation of a council and mayoralty. The city was largely controlled by merchant families known as the Tribes of Galway and grew into a significant trading port.
+        <br>
+        <br>
+        Despite periods of decline, Galway has emerged in the 21st century as a popular tourist destination, renowned for its festivals and events, such as the Galway International Arts Festival. In 2018, it was named the European Region of Gastronomy, and in 2020, it served as the European Capital of Culture alongside Rijeka, Croatia.
+    </p> <br> <br>
+        
+        
+        
+        
+        
+    <div id="map" style="height: 400px; width: 100%;"></div>
     
+    <script>
+        // Your Leaflet map initialization code goes here
+        var map = L.map('map').setView([53.2740, -9.0513], 14);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script> <br>
+
+        <h2>Highlights of Galway</h2>
+        <p> We were only in Galway for one day but I'm convinced we could have easily filled two more days there well. When we arrived, we had a few hours to roam around the market and then headed to <a href="https://ccmireland.com/"> The Computer and Communications Museum of Ireland</a>. This is a low-tech museum dedicated to the growth of everything high-tech. I thought this juxtaposition was cool, and the two attendants who gave us the tour were very sweet. We then had fish and chips at <a href="http://www.mcdonaghs.net/"> McDonaghs</a>. This wasn't my favorite meal, but I'm no expert in the Fish & Chips market. Afterwards, I went down to the water and walked around there for a few hours. I highly recommend taking some time to meander the "boardwalk". This was probably my favorite moment of the day.
+        </p> <br>
+        <h3>Downtown</h3>
+
+        <div class="image-gallery">
+            <div class="image-text"> 
+                <img tabindex="0" src="morepics/galFlags.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="morepics/galFlagsZoom.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        </div>
+        <h3>Galway Cathedral</h3>
+        <div class="image-gallery">
+            <div class="image-text">
+                <img tabindex="0" src="morepics/galStainedGlass.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="morepics/galChurchFlag.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        </div>
+        <!-- </div> -->
+        <h3>Little Walk</h3>
+        <div class="image-gallery">
+            <div class="image-text">
+                <img tabindex="0" src="morepics/galHouses.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="camImages/galMe2.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+            <div class="image-text">
+                <img tabindex="0" src="morepics/galFlowers.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="morepics/galBoardwalk.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    </footer>
     
 </body>
 </html>

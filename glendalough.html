@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Glendalough</title>
 </head>
 <body>
     <a id = "Skip" href = "#main">Skip to Main Content</a>
@@ -17,9 +23,9 @@
         <nav>
             <a href="index.html">About Me</a>
             <a href="dublin.html">Dublin</a>
-            <a href="kilkenny.html"> Kilkenny</a>
+            <a href="galway.html"> Galway</a>
             <a h class="current"ref="glendalough.html"> Glendalough</a>
-            <a href="galway.html">Galway</a>
+            <a href="northernIE.html">Northern Ireland</a>
             <a href="cliffs.html">Cliffs of Moher</a>
             <a href="blog.html">Blog</a>
             <a href="gallery.html">Gallery</a>
@@ -27,44 +33,93 @@
     </header>
 
     <main id = "main">
-        <div class="header-container glendalough">
+        <div class="header-container glendalough banner">
             <!-- <img tabindex="0" src="images1/glenbanner.jpg" alt="Glendalough Picture"> --> 
+            <img class="parallax" src = "images1/glenbanner.jpg" alt="Glendalough Banner"  > 
             <h2 class="special-heading">Glendalough</h2>
-        </div>
-    <p>
+        </div> <br>
+    <p> 
         Glendalough (/ˌɡlɛndəˈlɒx/; Irish: Gleann Dá Loch, meaning "valley of two lakes"[2]) is a glacial valley in County Wicklow, Ireland, renowned for an Early Medieval monastic settlement founded in the 6th century by St Kevin. From 1825 to 1957, the head of the Glendalough Valley was the site of a galena lead mine. Glendalough is also a recreational area for picnics, for walking along networks of maintained trails of varying difficulty, and also for rock climbing.
         <br>
         <br>
         The present remains in Glendalough tell only a small part of its story. The monastery in its heyday included workshops, areas for manuscript writing and copying, guest houses, an infirmary, farm buildings and dwellings for both the monks and a large lay population. The buildings which survive probably date from between the 10th and 12th centuries.[4]
-    </p>
-    <section id="gallery">
-        <h2>My Gallery</h2>
+    </p> <br>
+
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    
+    <script>
+        // Your Leaflet map initialization code goes here
+        var map = L.map('map').setView([53.011299, -6.326156], 15);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script> <br>
+
+        <h2> the Journey to and Through Glen</h2>
+        <p> There are essentially two parts of Glendalough, or at least this is what we gathered from our time there. There is the monastery and ruins portion, and then there is the lakes and scenic walk portion. Below are some pictures from that first part. </p> <br>
+        <!-- <div class="image-gallery"> -->
+            <div class="image-text"> 
+                <img tabindex="0" src="camImages/glenDrive.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <!-- <div class="overlay-text"> HIfjidsofjiaos </div> -->
+                <img tabindex="0" src="camImages/glenGraves.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="camImages/glenView.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+                <img tabindex="0" src="camImages/glenNav.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            </div>
+        <!-- </div> -->
+        <br> <br> <p> Here are some views from Upper Glen Lake and the walk there. </p> <br>
+        <div class="image-text"> 
+            <img tabindex="0" src="camImages/glenWALK.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            <!-- <div class="overlay-text"> HIfjidsofjiaos </div> -->
+            <img tabindex="0" src="camImages/glenUpper.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            <img tabindex="0" src="camImages/glenUpper2.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+            <img tabindex="0" src="camImages/glenUs.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+
+        </div>
+
+        <h2>Gallery</h2>
         <div class="image-grid">
-            <img tabindex="0" src="images1/glensarah.jpeg" alt="Sarah Walking in a Ruin" width = "200">
-            <img tabindex="0" src="images1/glengraves.jpeg" alt="Some Graves at the Monastic Site" width = "200">
-            <img tabindex="0" src="images1/glenbeach.jpeg" alt="Beach Area at Glendalough" width = "200">
-            <img tabindex="0" src="images1/glenhouse.jpeg" alt="Pretty Cottage at Glendalough" width = "200">
-            <img tabindex="0" src="images1/glenwater.jpeg" alt="Some Rocks and Water" width = "200">
-            <img tabindex="0" src="images1/glensarahandme.JPG" alt="Sarah Walking in a Ruin" width = "200">
-            <img tabindex="0" src="images1/glenwalk.jpeg" alt="Some Graves at the Monastic Site" width = "200">
-            <img tabindex="0" src="images1/glenwoods.jpeg" alt="Beach Area at Glendalough" width = "200">
-            <img tabindex="0" src="images1/glenme.JPG" alt="Pretty Cottage at Glendalough" width = "200">
+                <img tabindex="0" src="images1/glensarah.jpeg" alt="Sarah Walking in a Ruin" width = "200">
+                </img>
 
+                <img tabindex="0" src="images1/glengraves.jpeg" alt="Beach Area at Glendalough" width = "200">
+                </img>
 
+                <img tabindex="0" src="images1/glenhouse.jpeg" alt="Pretty Cottage at Glendalough" width = "200">
+                </img>
+            
+                <img tabindex="0" src="images1/glenbeach.jpeg" alt="Some Graves at the Monastic Site" width = "200">
+                </img>
 
+            <!-- <figure> -->
+                <img tabindex="0" src="images1/glenwater.jpeg" alt="Some Rocks and Water" width = "200">
+                    <!-- <figcaption></figcaption> -->
+                </img>
+            <!-- </figure> -->
+
+            <!-- <figure> -->
+                <img tabindex="0" src="images1/glensarahandme.JPG" alt="Sarah Walking in a Ruin" width = "200">
+                    <!-- <figcaption></figcaption> -->
+                </img>
+            <!-- </figure> -->
+
+            <!-- <figure> -->
+                <img tabindex="0" src="images1/glenwalk.jpeg" alt="Some Graves at the Monastic Site" width = "200">
+                    <!-- <figcaption></figcaption> -->
+                </img>
+            <!-- </figure> -->
+            <!-- <figure> -->
+                <img tabindex="0" src="images1/glenwoods.jpeg" alt="Beach Area at Glendalough" width = "200">
+                    <!-- <figcaption></figcaption> -->
+                </img>
+            <!-- </figure> -->
+            <!-- <figure> -->
+                <img tabindex="0" src="images1/glenme.JPG" alt="Pretty Cottage at Glendalough" width = "200">
+                    <!-- <figcaption></figcaption> -->
+                </img>
+            <!-- </figure> -->
         </div>
-    </section>
 
-    <img id="overlay-btn" src="images1/mapp.png" alt="Overlay Button Image" width="300">
-
-    <div id="overlay" class="overlay">
-        <div class="overlay-content">
-            <h2>Overlay Content</h2>
-            <p>This is the content that will be displayed in the overlay.</p>
-            <button id="close-btn">Close</button>
-        </div>
-    </div>
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 
 
     </main>
