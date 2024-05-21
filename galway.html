@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
@@ -24,7 +25,7 @@
             <a href="index.html">About Me</a>
             <a href="dublin.html">Dublin</a>
             <a class="current" href="galway.html"> Galway</a>
-            <a ref="glendalough.html"> Glendalough</a>
+            <a href="glendalough.html"> Glendalough</a>
             <a href="northernIE.html">Northern Ireland</a>
             <a href="cliffs.html">Cliffs of Moher</a>
             <a href="blog.html">Blog</a>
@@ -66,36 +67,43 @@
         </p> <br>
         <h3>Downtown</h3>
 
-        <div class="image-gallery">
-            <div class="image-text"> 
-                <img tabindex="0" src="morepics/galFlags.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-                <img tabindex="0" src="morepics/galFlagsZoom.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+        <div class="image-gallery2">
+            <div > 
+                <a href="morepics/galFlags.JPG" data-lightbox="image-1" data-title="View of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/galFlags.JPG" alt="View of the bustling town from Mainguard Street." alt-data= "View of the bustling town from Mainguard Street." width = "200"></a>
+                <p>View of the bustling town from Mainguard Street.</p>
+            </div>
+            <div > 
+                <a href="morepics/galFlagsZoom.JPG" data-lightbox="image-2" data-title="Zoomed in view of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/galFlagsZoom.JPG" alt="Zoomed in view of the bustling town from Mainguard Street." alt-data= "Zoomed in view of the bustling town from Mainguard Street." width = "200"></a>
+                <p>Learn about the <a href="https://thelatinquarter.ie/history-of-galway-city/">Latin Quarter</a> of Galway.</p>
             </div>
         </div>
-        <h3>Galway Cathedral</h3>
-        <div class="image-gallery">
-            <div class="image-text">
-                <img tabindex="0" src="morepics/galStainedGlass.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-                <img tabindex="0" src="morepics/galChurchFlag.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
+        <h3>Churches</h3>
+        <div class="image-gallery2">
+            <div>
+                <a href="morepics/galStainedGlass.JPG" data-lightbox="image-2" data-title="Stained glass window from a church in Galway"> <img tabindex="0" src="morepics/galStainedGlass.JPG" alt="Stained glass window from a church in Galway." alt-data= "Stained glass window from a church in Galway." width = "200"></a>
+                <p>I unfortunately did not get the chance to go inside the Galway Cathedral, but this is a stained glass window from </p>
+            </div>
+            <div>
+                <a href="morepics/galChurchFlag.JPG" data-lightbox="image-2" data-title="Outside view of flag and church in Galway"> <img tabindex="0" src="morepics/galChurchFlag.JPG" alt="Outside view of flag and church in Galway." alt-data= "Outside view of flag and church in Galway" width = "200"></a>
+                <p>View of the bustling town from Mainguard Street.</p>
             </div>
         </div>
         <!-- </div> -->
         <h3>Little Walk</h3>
-        <div class="image-gallery">
-            <div class="image-text">
-                <img tabindex="0" src="morepics/galHouses.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-                <img tabindex="0" src="camImages/galMe2.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-            </div>
-            <div class="image-text">
-                <img tabindex="0" src="morepics/galFlowers.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-                <img tabindex="0" src="morepics/galBoardwalk.JPG" alt="Digital picture of our drive to Glendalough" width = "100vw">
-            </div>
+        <div class="image-gallery2">
+            <a href="morepics/galHouses.JPG" data-lightbox="image-2" data-title="View of pretty houses in a row in Galway"> <img tabindex="0" src="morepics/galHouses.JPG" alt="View of pretty houses in a row in Galway." alt-data= "View of pretty houses in a row in Galway." width = "200"></a>
+            <a href="camImages/galMe2.JPG" data-lightbox="image-2" data-title="Me standing in front of the row."> <img tabindex="0" src="camImages/galMe2.JPG" alt="Me standing in front of the row." alt-data= "Me standing in front of the row." width = "200"></a>
+            <a href="morepics/galFlowers.JPG" data-lightbox="image-2" data-title="Flowers on the boardwalk."> <img tabindex="0" src="morepics/galFlowers.JPG" alt="Flowers along the boardwalk." alt-data= "Flowers along the boardwalk." width = "200"></a>
+            <a href="morepics/galBoardwalk.JPG" data-lightbox="image-2" data-title="Mari, Sarah, and Navya on the boardwalk."> <img tabindex="0" src="morepics/galBoardwalk.JPG" alt="Mari, Sarah, and Navya on the boardwalk." alt-data= "Mari, Sarah, and Navya on the boardwalk." width = "200"></a>
         </div>
 
     </main>
     <footer>
         <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
     </footer>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
     
 </body>
 </html>
