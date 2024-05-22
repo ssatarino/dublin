@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
     <link rel="stylesheet" href="https://use.typekit.net/cnu4xbv.css">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Dublin</title>
 </head>
 <body>
     <a id = "Skip" href = "#main">Skip to Main Content</a>
@@ -16,16 +23,104 @@
         <h1>Exploring Ireland: A Study Abroad Journey</h1>
         <nav>
             <a href="index.html">About Me</a>
-            <a class="current" href="dublin.html"> Dublin</a>
-            <a href="kilkenny.html">Kilkenny</a>
-            <a href="glendalough.html">Glendalough</a>
-            <a href="galway.html">Galway</a>
+            <a class="current" href="dublin.html">Dublin</a>
+            <a href="galway.html"> Galway</a>
+            <a href="glendalough.html"> Glendalough</a>
+            <a href="northernIE.html">Northern Ireland</a>
             <a href="cliffs.html">Cliffs of Moher</a>
             <a href="blog.html">Blog</a>
             <a href="gallery.html">Gallery</a>
         </nav>
     </header>
+
+    <main id = "main">
+        <div class="header-container dublin banner">
+            <!-- <img tabindex="0" src="images1/glenbanner.jpg" alt="Glendalough Picture"> --> 
+            <img class="parallax" src = "morepics/dublinBanner2.jpeg" alt="Dublin Banner"  > 
+            <h2 class="special-heading">Dublin</h2>
+        </div> <br>
+    <h2>Some History </h2>
+        <p> Dublin (/ˈdʌblɪn/ ; Irish: Baile Átha Cliath) is the capital and largest city of Ireland. Situated on a bay at the mouth of the River Liffey, Dublin is in the province of Leinster and bordered to the south by the Dublin Mountains, part of the Wicklow Mountains range. As of the 2022 census, the city council area had a population of 592,713, while the greater Dublin area, including suburbs, had 1,263,219 residents, and County Dublin's population totaled 1,501,500.
+        </p>
+        <p>Originally settled by the Gaels during or before the 7th century, Dublin later saw the arrival of the Vikings. By the 12th century, it had grown into Ireland's principal settlement following the Anglo-Norman invasion. The city experienced rapid expansion from the 17th century and became the second largest city in the British Empire after the Acts of Union in 1800. Post-independence in 1922, Dublin became the capital of the Irish Free State, later renamed Ireland in 1937. In 2018, the Globalization and World Cities Research Network (GaWC) ranked Dublin as an "Alpha minus" global city, placing it among the top thirty cities worldwide.
+        </p> <br>
+        
+        
+    <div id="map" style="height: 400px; width: 100%;"></div>
     
+    <script>
+        // Your Leaflet map initialization code goes here
+        var map = L.map('map').setView([53.3498, -6.2603], 14);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script> <br>
+
+        <h2>Museums</h2>
+        <p>A good portion of my afternoons in Dublin were spent in museums around the city. Below, see pictures from the National Gallery of Ireland, Book of Kells, and the Museum of Archeology.
+        </p>
+
+        <h3>National Gallery of Ireland</h3>
+        <p>I wanted to picture all of my favorite paintings that I saw, but my pictures wouldn't do them justice. </p>
+            <!-- /*Check out their programming, too. I went to a free guided tour after going back the first time. I would recommend. <a href="https://www.nationalgallery.ie/whats-on">See here.</a></p>*/ -->
+        <div class="image-gallery-up">
+            <div> 
+                <a href="morepics/nationalGalPretty.jpeg" data-lightbox="image-1" data-title="View of the Shaw Room."> <img tabindex="0" src="morepics/nationalGalPretty.jpeg" alt="View of the Shaw Room." alt-data= "View of the Shaw Room." width = "200"></a>
+                <p>The Shaw Room is art itself. Fun fact: when first contructed in 1864, there were 2,000 gas lights in this room.</p>
+            </div>
+
+            <div > 
+                <a href="morepics/nationalGalModern.jpeg" data-lightbox="image-2" data-title="Zoomed in view of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/nationalGalModern.jpeg" alt="Zoomed in view of the bustling town from Mainguard Street." alt-data= "Zoomed in view of the bustling town from Mainguard Street." width = "200"></a>
+                <p>Pretty sick exhibition from Hughie O'Donoghue called Original Sins. Read about it <a href="https://www.irishexaminer.com/lifestyle/artsandculture/arid-40926935.html"> here</a>.</p>
+            </div>
+            <div > 
+                <a href="morepics/nationalGalWide.jpeg" data-lightbox="image-2" data-title="Zoomed in view of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/nationalGalWide.jpeg" alt="Zoomed in view of the bustling town from Mainguard Street." alt-data= "Zoomed in view of the bustling town from Mainguard Street." width = "200"></a>
+                <p>I loved this room (European Art 1850-1950.) There were a bunch of paintings I studied last semester for 19th Century French Impressionism.</p>
+            </div>
+
+        </div>
+        <h3>Book of Kells</h3>
+        <p> The following was a poem plaquered on the wall at the beginning of the exhibition, and I really enjoyed it. The Book of Kells was written by St Colum Cille's followers.</p>
+        <div class="image-gallery-up poemer">
+            
+            <div class="poem"> 
+                <h4 class="poem-heading"> St. Colum Cille the Scribe</h4>
+                <p class="poemwords">My hand is weary with writing<br>
+                My sharp quill is not steady<br>
+                My slender-beaked pen juts forth<br>
+                A black draught of shining dark-blue ink.<br>
+                <br>
+                A stream of the wisdom of blessed God<br>
+                Springs from my fair-brown shapely hand:<br>
+                On the page it squirts its draught<br>
+                Of ink of the green skinned holly<br>
+                <br>
+                My little dripping pen travels<br>
+                Across the plain of shining books<br>
+                Without ceasing for the wealth of the great-- <br>
+                Whence my hand is weary from writing.<br>
+            </p> 
+            </div>
+
+            <div > 
+                <a href="morepics/kellsMeSarah.JPEG" data-lightbox="image-2" data-title="Zoomed in view of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/kellsMeSarah.JPEG" alt="Zoomed in view of the bustling town from Mainguard Street." alt-data= "Zoomed in view of the bustling town from Mainguard Street." width = "200"></a>
+                <p></p>
+            </div>
+            <div class="globey"> 
+                <a href="morepics/kellsGlobe.JPG" data-lightbox="image-2" data-title="Zoomed in view of the bustling town from Mainguard Street."> <img tabindex="0" src="morepics/kellsGlobe.JPG" alt="Zoomed in view of the bustling town from Mainguard Street." alt-data= "Zoomed in view of the bustling town from Mainguard Street." width = "200"></a>
+                <p class="globe-text">The globe in the center of the Long Room is an "illuminated artwork" named Gaia. They are doing a large restoration project, so most of the shelves were empty of books. The globe, of course, is still there.</p>
+            </div>
+
+        </div>
+        <!-- </div> -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    </footer>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
     
 </body>
 </html>
