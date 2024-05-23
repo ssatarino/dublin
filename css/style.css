@@ -564,6 +564,33 @@ a {
     }
 }
 
+@media (max-width: 600px) {
+    .me-cam  {
+        width: 82vw;
+        height: 210px;
+        margin: 2%;
+        border:#BF8360 5px dashed;
+
+
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    nav {
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        align-self: start;
+        font-size: 4vw;
+        padding: 3%;
+    }
+    h1 {
+        font-size: larger;
+    }
+}
 
 
 
