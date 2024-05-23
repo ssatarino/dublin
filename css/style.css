@@ -41,6 +41,7 @@ h2 {
     font-size: 2vw;
     padding-top: 4%;
     text-transform: uppercase;
+    text-align: left;
 }
 
 h3 {
@@ -301,7 +302,7 @@ footer {
 .index-video {
     width: 48%;
     height: 420px;
-    border: #BF2642 10px dotted;
+    border: #BF2642 8px solid;
 
 }
 
@@ -491,7 +492,7 @@ a {
         width: 80vw;
         height: 300px;
         margin: 2%;
-        border: #BF2642 5px solid;
+        border:#BF8360 8px dashed;
 
 
     }
