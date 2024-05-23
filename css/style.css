@@ -18,7 +18,7 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
     text-align: justify;
-    border: 5px solid #A9BF04;
+    border: 10px solid #A9BF04;
     background-color: #eeebe122;
     padding: 0.5%;
     margin-block-start: 1em;
@@ -30,8 +30,8 @@ h1 {
     left: 0;
     width: 100%;
     justify-content: center;
-    padding: 20px 0; /* Add padding to increase the height */
-    z-index: 1000; /* Ensure the h1 stays on top of other content */
+    padding: 20px 0; 
+    z-index: 1000;
 }
 
 
@@ -71,7 +71,7 @@ body{
     background-color: #eeebe122;
     font-style: italic;
     font-size: 110%;
-    text-align: justify;
+    text-align: left;
     
 }
 
@@ -83,7 +83,7 @@ p {
 nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: #778C58;
@@ -103,7 +103,8 @@ nav a{
     font-style: italic;
     margin: 3%;
     text-decoration: none;
-    color: #63704e;
+    /* color: #63704e; */
+    color: #73774f;
     padding: 2%;
     line-height: 0;
 
@@ -119,13 +120,8 @@ nav a:hover{
 .current {
     font-size: 2vw;
     text-transform: uppercase;
-    /* border-bottom: 5px dashed #A9BF04;  */
-    /* background-color: #f5f1e6; */
     background-color: #BF2642;
-    /* color: #778C58; */
     color: #f5f1e6;
-    /* color: #BF2642; */
-    /* background-color: rgba(191, 38, 66, 0.3); */
 
 }
 
@@ -155,15 +151,6 @@ img:hover {
     opacity: 0.5;
 }
 
-.image-text img{
-   
-}
-
-.image-text p{
-    
-}
-
-
 
 .overlay-text {
     position: absolute;
@@ -181,31 +168,6 @@ img:hover {
     opacity: 0; /* Initially hide the overlay text */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
-
-/* .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: flex-start;
-}
-
-
-.image-grid {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; /* Horizontally center images within the container 
-}
-
-.image-grid img {
-    border: solid #BF8360 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    opacity: 1;
-    margin: 1%; 
-    box-sizing: border-box; 
-    
-}
- */
 
 
  .image-gallery {
@@ -279,6 +241,10 @@ img:hover {
 
   }
 
+  .dublin {
+    background-image: url("../morepics/dublinBanner2.jpeg");
+  }
+
   .northernireland {
     background-image: url("../camImages/giantsbanner3.JPG");
   }
@@ -296,6 +262,13 @@ img:hover {
     }
 
 
+figcaption {
+    position: absolute;
+    top: 40%;
+    color: blue;
+}
+
+    
 footer {
     padding-top: 20px;
 }
@@ -320,14 +293,16 @@ footer {
     vertical-align: top; /* Align elements vertically at the top */
     /* width: 50%; Each element takes up 50% of the width of its container */
     box-sizing: border-box; /* Include padding and border in the element's total width */
-    width: 49%;
+    width: 48%;
     height: 420px;
-    
+
 }
 
 .index-video {
-    width: 49%;
+    width: 48%;
     height: 420px;
+    border: #BF2642 10px dotted;
+
 }
 
 .mePic {
@@ -350,8 +325,8 @@ footer {
     display: flex;
     margin: 3%;
     vertical-align: center;
-
 }
+
 #map {
     max-width: 100%; /* Ensure the map doesn't exceed the width of its parent container */
 }
@@ -368,6 +343,10 @@ footer {
     /* opacity:.5; */
     z-index: -4;
 
+}
+
+a {
+    color:#BF2642;
 }
 
 .image-gallery2 p{
@@ -387,6 +366,39 @@ footer {
     grid-gap: 10px;
     padding-top: 10px;
 
+}
+.poem {
+    background-image: url("../morepics/kellsMeSarah.JPEG");
+    height: 97.5%;
+}
+.poemwords{
+    text-decoration: none;
+    color: white;
+    z-index: 1000;
+    margin: 4%;
+    justify-content: center;
+}
+.poem-heading{
+    padding-top: 30%;
+    color:#bf2642dd;
+    font-family: "pragmatica-extended", sans-serif;;
+    font-size: large;
+    margin: 4%;
+}
+
+.globe-text{
+    background-color:#bf2642;
+    color: white;
+    height: 36%;
+    font-weight:100;
+    /* font-family: "pragmatica-extended", sans-serif; */
+    padding: 3%;
+}
+.globey {
+
+    height: 100%
+}
+.poemer {
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -429,7 +441,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-
+    h1 {
+        border: 10px solid #A9BF04;
+    }
     .image-gallery2{
         grid-template-columns: 1fr;
     }
@@ -466,22 +480,36 @@ footer {
     }
 
     .index-video {
-        width: 90vw;
-        height: 330px;
+        width: 78vw;
+        margin: 2%;
+        height: 300px;
+
         /* height: 360px; */
     }
     
     .me-cam  {
-        width: 90vw;
-        height: 330px;
+        width: 80vw;
+        height: 300px;
+        margin: 2%;
+        border: #BF2642 5px solid;
+
 
     }
 
     .special-heading {
-        width: 100vw;
-    }
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(191, 38, 66, 0.3);
+        padding: 10px 20px;
+        font-size: 50px;
+        text-align: center;
+        }
 
-    .glendalough, .kilkenny, .galway {
+    .glendalough, .kilkenny, .galway, .northernireland, .cliffsofmoher, .dublin{
         background-image: url("");
         min-height: 100px;
         padding: 10px;
@@ -512,6 +540,11 @@ footer {
 
     h3 {
         font-size: large;
+    }
+
+    .globe-text{
+        height: fit-content;
+        padding: 3%;
     }
 
 }
