@@ -28,7 +28,7 @@ h1 {
     position: static;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
     padding: 20px 0; 
     z-index: 1000;
@@ -443,7 +443,10 @@ a {
 
 @media (max-width: 768px) {
     h1 {
-        border: 10px solid #A9BF04;
+        border: 8px solid #A9BF04;
+        padding: 20px 10px 20px 10px;
+        font-size: 12vw;
+        margin-bottom: 8%;
     }
     .image-gallery2{
         grid-template-columns: 1fr;
@@ -462,7 +465,8 @@ a {
     }
 
     .about-me-p {
-        padding: 20px 20px 20px 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: justify; /* Center text */
         padding-left: 0px;
     }
@@ -499,14 +503,14 @@ a {
 
     .special-heading {
         position: absolute;
-        width: 80%;
+        /* width: 80%; */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         background-color: rgba(191, 38, 66, 0.3);
         padding: 10px 20px;
-        font-size: 50px;
+        font-size: 8vw;
         text-align: center;
         }
 
@@ -519,6 +523,10 @@ a {
     .parallax {
         display: block;
 
+    }
+
+    nav {
+        margin-bottom: 4%;
     }
     
     nav a {
@@ -546,6 +554,10 @@ a {
     .globe-text{
         height: fit-content;
         padding: 3%;
+    }
+
+    footer {
+        font-size: small;
     }
 
 }
