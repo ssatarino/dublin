@@ -12,10 +12,11 @@
 
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordian:hover {
+  .accordian:hover {
     background-color: #A9BF04;
     color: white;
   }
+
 
   .panel {
     padding: 0 18px;
@@ -33,11 +34,7 @@
     color: #777;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-    background-color: #A9BF04;
+
   }
 
   .blog {

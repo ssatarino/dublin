@@ -368,6 +368,8 @@ a {
     padding-top: 10px;
 
 }
+
+
 .poem {
     background-image: url("../morepics/kellsMeSarah.JPEG");
     height: 97.5%;
@@ -387,10 +389,22 @@ a {
     margin: 4%;
 }
 
+.kellsSarah1 {
+    border-bottom: #a9bf0421 solid 80px;
+    border-bottom: #bf836026 solid 80px;
+
+}
+
+.kellsSarah2 {
+    border-bottom: #a9bf0421 solid 20px;
+    border-bottom: #bf836026 solid 20px;
+
+}
+
 .globe-text{
     background-color:#bf2642;
     color: white;
-    height: 36%;
+    height: 40%;
     font-weight:100;
     /* font-family: "pragmatica-extended", sans-serif; */
     padding: 3%;
@@ -398,8 +412,6 @@ a {
 .globey {
 
     height: 100%
-}
-.poemer {
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -554,6 +566,10 @@ a {
     .globe-text{
         height: fit-content;
         padding: 3%;
+    }
+
+    .kellsSarah1 {
+        border:none;
     }
 
     footer {
